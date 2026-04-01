@@ -166,13 +166,13 @@ export default function Home() {
               <div className="w-6 h-6 rounded-full overflow-hidden bg-primary">
                 <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD95YAApwUtgOVtXX9ReT_aHhMWF0CZQn17XCsFhvIFkksZU56WgujhSwdoSX86XyXIo8FMYlGqYF7q9D_Vx22rK8GC4Of5LR9kgRgo7sjH4TbW5J7IeuIfsYiMV3XbY3h0r6oqZEBnHfbTahimUVy1BUCWDtSCiPeZiAR1-GuluNsiCipxNHdXewx95Jlpp1QV9S08r3JSFvrQ3h9e8aSDszyhV8D6sArEKyA9psAVN_8SDoxhjN0B5ZN67iudIunlKvh7MI7Hw_M" alt="Wood texture" />
               </div>
-              <span className="font-label text-xs tracking-wider uppercase">American Walnut</span>
+              <span className="font-label text-xs tracking-wider uppercase">African Mahogany</span>
             </div>
             <div className="flex items-center gap-3 px-6 py-3 bg-surface-container rounded-full border border-outline-variant/20">
               <div className="w-6 h-6 rounded-full overflow-hidden bg-primary">
                 <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQi7VEjnZ8xFCIr_gHdR3hdz4-G6ap-l1_Uohd_h0IAjw3i_h385LufW5QLyf-RSbkcMpd_PIj8IMvvsRMg83N4Ko4C8zeus7nncDCQW1gfBkjqG3KVLd_HXGlANrZfrEzagNNnckbfEU4Dw1tjp3EO-CcNwZrNKNFZ4xZMc-5SR_06S4lRibGCmEs0-Usi1-0vDgIMPVyuSqJpmAUskQiIuhQltOyJpqwX9wWb3VZlWKBfkQnNGaZrDv3kQ__4ZbvpsLbvMZpcao" alt="Marble texture" />
               </div>
-              <span className="font-label text-xs tracking-wider uppercase">Carrara Marble</span>
+              <span className="font-label text-xs tracking-wider uppercase">Zuma Granite</span>
             </div>
             <div className="flex items-center gap-3 px-6 py-3 bg-surface-container rounded-full border border-outline-variant/20">
               <div className="w-6 h-6 rounded-full overflow-hidden bg-primary">

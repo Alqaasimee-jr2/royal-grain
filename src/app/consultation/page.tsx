@@ -76,7 +76,7 @@ export default function Consultation() {
                   <div>
                     <h4 className="font-headline text-lg text-primary">Material Library Access</h4>
                     <p className="text-on-surface-variant text-sm mt-1 leading-relaxed">
-                      Experience our tactile library of sustainable woods, Italian linens, and hand-forged metals.
+                      Experience our tactile library of sustainable woods, handcrafted Aso-Oke textiles, and hand-forged metals.
                     </p>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function Consultation() {
               </div>
               <div>
                 <span className="text-xs font-label uppercase tracking-widest text-outline">Featured Material</span>
-                <p className="font-headline text-primary">Reclaimed Artisan Walnut</p>
+                <p className="font-headline text-primary">Reclaimed Artisan Iroko</p>
               </div>
             </div>
 

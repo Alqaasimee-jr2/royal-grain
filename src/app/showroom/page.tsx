@@ -31,7 +31,7 @@ export default function Showroom() {
             </div>
             <div className="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-xl shadow-xl max-w-xs hidden md:block">
               <span className="text-xs uppercase tracking-widest text-outline block mb-2">Featured Material</span>
-              <h3 className="text-lg font-headline font-bold mb-2">Sustainably Sourced American Walnut</h3>
+              <h3 className="text-lg font-headline font-bold mb-2">Sustainably Sourced African Mahogany</h3>
               <p className="text-sm text-on-surface-variant">
                 Each piece begins with timber selected for its unique narrative and structural integrity.
               </p>
@@ -90,7 +90,7 @@ export default function Showroom() {
               <div>
                 <h2 className="text-2xl md:text-3xl font-headline font-bold text-primary mb-2">The Heritage Refectory Table</h2>
                 <p className="text-on-surface-variant max-w-md italic font-serif text-sm md:text-base">
-                  Solid American Walnut with brushed brass inlay and hand-carved joinery.
+                  Solid Aged Iroko Wood with brushed brass inlay and hand-carved joinery.
                 </p>
               </div>
               <div className="text-left md:text-right">
@@ -166,7 +166,7 @@ export default function Showroom() {
                 <span className="text-xl font-headline font-bold text-primary">₦1,200,000</span>
               </div>
               <p className="text-on-surface-variant line-clamp-2">
-                A masterclass in ergonomics and sculptural form. Crafted from a single piece of steam-bent ash wood.
+                A masterclass in ergonomics and sculptural form. Crafted from a single piece of steam-bent Mansonia wood.
               </p>
               <button className="text-primary font-bold text-sm flex items-center gap-2 group/btn">
                 Explore Details

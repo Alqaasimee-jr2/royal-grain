@@ -40,7 +40,7 @@ export default function Portfolio() {
             />
             <div className="absolute inset-0 bg-primary/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-12 translate-y-4 group-hover:translate-y-0">
               <div className="bg-surface-container-lowest/90 p-8 rounded-xl max-w-md shadow-2xl">
-                <h3 className="text-3xl font-headline text-primary mb-2">The Walnut Sanctuary</h3>
+                <h3 className="text-3xl font-headline text-primary mb-2">The Mahogany Sanctuary</h3>
                 <p className="text-on-surface-variant font-body mb-6 text-sm leading-relaxed">
                   A residential masterpiece in Lagos focusing on the seamless integration of raw timber and polished brass accents.
                 </p>
@@ -79,7 +79,7 @@ export default function Portfolio() {
             />
             <div className="absolute inset-0 bg-primary/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center translate-y-4 group-hover:translate-y-0">
               <div className="text-center p-6">
-                <h3 className="text-2xl font-headline text-white mb-2">Linen & Grain</h3>
+                <h3 className="text-2xl font-headline text-white mb-2">Aso-Oke & Grain</h3>
                 <span className="text-on-primary-container text-[10px] font-label uppercase tracking-[0.2em] block mb-1">Lagos</span>
                 <span className="text-on-primary-container text-[10px] font-label uppercase tracking-widest opacity-70">View Project</span>
               </div>
@@ -107,7 +107,7 @@ export default function Portfolio() {
             />
             <div className="absolute inset-0 bg-primary/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center translate-y-4 group-hover:translate-y-0">
               <div className="text-center p-6">
-                <h3 className="text-2xl font-headline text-white mb-2">Travertine Spa</h3>
+                <h3 className="text-2xl font-headline text-white mb-2">Terracotta Spa</h3>
                 <span className="text-on-primary-container text-xs font-label uppercase tracking-widest">View Project</span>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function Portfolio() {
                   alt="Aged Walnut"
                 />
               </div>
-              <span className="font-label text-sm uppercase tracking-wider">Aged Walnut</span>
+              <span className="font-label text-sm uppercase tracking-wider">Aged Iroko</span>
             </div>
             <div className="flex items-center gap-4 bg-surface-container-lowest px-6 py-3 rounded-full shadow-sm border border-outline-variant/10">
               <div className="w-10 h-10 rounded-full bg-stone-200 overflow-hidden">
@@ -164,7 +164,7 @@ export default function Portfolio() {
                   alt="Carrara Marble"
                 />
               </div>
-              <span className="font-label text-sm uppercase tracking-wider">Carrara Marble</span>
+              <span className="font-label text-sm uppercase tracking-wider">Zuma Granite</span>
             </div>
             <div className="flex items-center gap-4 bg-surface-container-lowest px-6 py-3 rounded-full shadow-sm border border-outline-variant/10">
               <div className="w-10 h-10 rounded-full bg-yellow-800 overflow-hidden">
@@ -184,7 +184,7 @@ export default function Portfolio() {
                   alt="Raw Linen"
                 />
               </div>
-              <span className="font-label text-sm uppercase tracking-wider">Raw Linen</span>
+              <span className="font-label text-sm uppercase tracking-wider">Hand-Woven Aso-Oke</span>
             </div>
           </div>
         </div>
