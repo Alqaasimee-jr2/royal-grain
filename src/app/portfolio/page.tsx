@@ -1,16 +1,22 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Portfolio',
+  description: 'Browse our signature interior design projects across Nigeria, highlighting architectural timber, travertine, and polished metals.',
+};
 
 export default function Portfolio() {
   return (
-    <main className="pt-32 pb-20">
+    <main className="pt-28 pb-16 md:pt-32 md:pb-20">
       {/* Hero Section / Title */}
-      <section className="max-w-screen-2xl mx-auto px-8 mb-20">
+      <section className="max-w-screen-2xl mx-auto px-6 md:px-12 mb-12 md:mb-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="max-w-3xl">
             <span className="text-tertiary-container font-label uppercase tracking-widest text-xs mb-4 block">
               The Curated Manuscript
             </span>
-            <h1 className="text-5xl md:text-7xl font-headline text-primary leading-tight">
+            <h1 className="text-4xl md:text-7xl font-headline text-primary leading-tight">
               Mastering the Art of <span className="italic">Atmospheric</span> Living
             </h1>
           </div>
@@ -23,13 +29,13 @@ export default function Portfolio() {
       </section>
 
       {/* Portfolio Bento Grid */}
-      <section className="max-w-screen-2xl mx-auto px-8">
+      <section className="max-w-screen-2xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Main Feature Project */}
           <div className="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low aspect-[16/10] cursor-pointer">
             <img
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzjsL2UzTjgbJId9r6tgEhbFkpMTnoMObvt6UB_ZMldixYutLriao-DV62XQ-hUauP2OJOVODx1RlDRutE9zaMgbmd7CqxHBhPJZFmWpsqVm5N5MVdRlNSS3WvymDnhgSr7kP7FBZF3iEqKytdzQw5LjCVpg9YEj_v6oxUQh5AFy2n-eHhhDQ9oI0rVJufr3vSHAaDXQWEYBQ6KSXPEDJWbyvpvzyJA6WR5StKOYR9eYr4-3Yt4OE7FVCpXDBPRsmdFAFRQAeyO78"
+              src="/portfolio_hero.png"
               alt="Walnut Sanctuary"
             />
             <div className="absolute inset-0 bg-primary/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-12 translate-y-4 group-hover:translate-y-0">
@@ -108,8 +114,8 @@ export default function Portfolio() {
           </div>
 
           {/* Final Large Callout */}
-          <div className="md:col-span-12 group relative overflow-hidden rounded-xl bg-surface-container aspect-[21/9] mt-8 flex items-center px-12 md:px-24">
-            <div className="z-10 max-w-2xl">
+          <div className="md:col-span-12 group relative overflow-hidden rounded-xl bg-surface-container aspect-square md:aspect-[21/9] mt-8 flex items-center px-6 md:px-24">
+            <div className="relative z-20 max-w-2xl bg-surface/80 md:bg-transparent backdrop-blur-md md:backdrop-blur-none p-6 md:p-0 rounded-xl">
               <h2 className="text-4xl md:text-5xl font-headline text-primary mb-6">Let's craft your manuscript.</h2>
               <p className="text-on-surface-variant font-body mb-8 text-lg">
                 Our design atelier at Mokola, Ibadan is currently the primary hub for all project inquiries. We are accepting commissions for late 2024. Every space we touch becomes a legacy.
@@ -133,9 +139,9 @@ export default function Portfolio() {
       </section>
 
       {/* Material Selection (Signature Component) */}
-      <section className="mt-32 bg-surface-container-low py-24">
-        <div className="max-w-screen-2xl mx-auto px-8">
-          <div className="text-center mb-16">
+      <section className="mt-20 md:mt-32 bg-surface-container-low py-16 md:py-24">
+        <div className="max-w-screen-2xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl font-headline text-primary mb-2">The Material Edit</h2>
             <p className="text-on-surface-variant font-body">Only the finest grains and stones make the cut.</p>
           </div>

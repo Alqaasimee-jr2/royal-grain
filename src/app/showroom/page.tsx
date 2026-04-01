@@ -1,13 +1,19 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Showroom',
+  description: 'Explore our digital gallery of hand-turned walnut and bespoke Ibadan craftsmanship at Royal Grain.',
+};
 
 export default function Showroom() {
   return (
-    <main className="pt-32 pb-20">
+    <main className="pt-28 pb-16 md:pt-32 md:pb-20">
       {/* Hero Section: Curated Manuscript Style */}
-      <section className="px-8 max-w-screen-2xl mx-auto mb-20">
+      <section className="px-6 md:px-12 max-w-screen-2xl mx-auto mb-12 md:mb-20">
         <div className="relative grid grid-cols-12 gap-6 items-end">
           <div className="col-span-12 md:col-span-7">
-            <h1 className="text-6xl md:text-8xl font-headline font-bold text-primary tracking-tighter leading-none mb-8">
+            <h1 className="text-5xl md:text-8xl font-headline font-bold text-primary tracking-tighter leading-none mb-6 md:mb-8">
               The Curated <br />
               <span className="italic font-normal">Manuscript.</span>
             </h1>
@@ -19,8 +25,8 @@ export default function Showroom() {
             <div className="aspect-[4/5] bg-surface-container overflow-hidden rounded-xl shadow-sm">
               <img
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh7PJjn-BYUAGtkkuzUcLobBsr0uQvYphEIe0j9vVUb3MNU5TyLcDAgg43id4o69zxdNaLJxkZ49COqh6vtHesHxS7gryDm2ebqCLLJFoZK1CXLuaN4zL9p_lFqSkfBynLywfnxDiMt-GrKWGrf8_FuAiTLqBfN4UOlpzBmDR4K3HDij84u0YvYABC58vCPmjPPnEVkLAj_hOULbH-cuMC-BkGwd4gbMb5AU7DWP3MBvfqOpoZZBpMrq7zN1cWptORyLB_usKSf9s"
-                alt="High-end walnut dining table"
+                src="/showroom_hero.png"
+                alt="High-end walnut dining table showroom"
               />
             </div>
             <div className="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-xl shadow-xl max-w-xs hidden md:block">
@@ -35,8 +41,8 @@ export default function Showroom() {
       </section>
 
       {/* Category Navigation: Material Chips */}
-      <section className="px-8 max-w-screen-2xl mx-auto mb-32 overflow-x-auto whitespace-nowrap scrollbar-hide flex gap-4 pb-4">
-        <button className="inline-flex items-center gap-3 px-6 py-3 bg-primary text-on-primary rounded-full transition-all">
+      <section className="px-6 md:px-12 max-w-screen-2xl mx-auto mb-16 md:mb-32 overflow-x-auto whitespace-nowrap scrollbar-hide flex gap-4 pb-4">
+        <button className="inline-flex items-center gap-3 px-6 py-3 bg-primary text-on-primary rounded-full transition-all flex-shrink-0">
           <span className="w-6 h-6 rounded-full overflow-hidden bg-stone-300">
             <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfLqRlhi1XwUCWBzHydORE4nGkbv5YV9BYEY9tUbNfxNsekbOcc2RJjeO_8CpFsXcfgQrxnGY7wns9gAiKrzgQsVU8-inNTE6bOQhE5ZQEyyrbh-2NRuu2-YUCWuL1--4Gz51RvvzbtNGepvMytI72zLZ5ebW4Y6o-AKZJMIyEDUAoifGij9UcaGzVyQjcFVEOvliOyvQRO7hUM1Riu2RfF90fO8H-3NQCUNhcy_GN0kiQVLTw1W486YtHqVVagLiq2yWrIw8DSyk" alt="Walnut wood grain" />
           </span>
@@ -70,8 +76,8 @@ export default function Showroom() {
             <div className="relative aspect-[16/9] overflow-hidden rounded-xl bg-surface-container-low mb-6">
               <img
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPCcraQr-Uv3vnxASp4PVjQxCCCg-HvRVoJ29yQ5tJwApQjqpR7ZJwX76LSt9XX7A6L3B6wx10GwGtVy27D7NZbKhaPKJXLrwsqqTwGqJV29ZM2XQ6zOfAOrsBzu3ZHDkTz-47e93s7zvzeA2J8ibqkg5D5_QpHPNpo-LEkPablLsk99WJKqsqFcJnhTm4aKxPPMgg2sV9vvCPRooiMx5JRXnDb8NhBPc0vFsbJEDmHPmvoGtNv3YOUpsYoyxS0zQe-X4Zlltv4ko"
-                alt="Highlight product"
+                src="/heritage_refectory_table.png"
+                alt="Highlight product The Heritage Refectory Table"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute top-6 left-6 flex gap-2">
@@ -80,22 +86,22 @@ export default function Showroom() {
                 </span>
               </div>
             </div>
-            <div className="flex justify-between items-start">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-start gap-4">
               <div>
-                <h2 className="text-3xl font-headline font-bold text-primary mb-2">The Heritage Refectory Table</h2>
-                <p className="text-on-surface-variant max-w-md italic font-serif">
+                <h2 className="text-2xl md:text-3xl font-headline font-bold text-primary mb-2">The Heritage Refectory Table</h2>
+                <p className="text-on-surface-variant max-w-md italic font-serif text-sm md:text-base">
                   Solid American Walnut with brushed brass inlay and hand-carved joinery.
                 </p>
               </div>
-              <div className="text-right">
-                <span className="text-2xl font-headline font-bold text-primary block">$14,500</span>
-                <span className="text-xs text-outline uppercase tracking-widest">Available for Order</span>
+              <div className="text-left md:text-right">
+                <span className="text-xl md:text-2xl font-headline font-bold text-primary block">₦12,500,000</span>
+                <span className="text-[10px] md:text-xs text-outline uppercase tracking-widest">Available for Order</span>
               </div>
             </div>
           </div>
 
           {/* Secondary Small */}
-          <div className="md:col-span-4 flex flex-col gap-8">
+          <div className="md:col-span-4 flex flex-col gap-6 md:gap-8">
             <div className="group">
               <div className="relative aspect-square overflow-hidden rounded-xl bg-surface-container-low mb-4">
                 <img
@@ -104,9 +110,9 @@ export default function Showroom() {
                   alt="Lounge chair"
                 />
               </div>
-              <div className="flex justify-between items-center">
-                <h3 className="text-xl font-headline font-bold">Loom Lounge Chair</h3>
-                <span className="text-lg font-headline font-bold text-primary">$3,200</span>
+              <div className="flex justify-between items-start md:items-center">
+                <h3 className="text-lg md:text-xl font-headline font-bold">Loom Lounge Chair</h3>
+                <span className="text-base md:text-lg font-headline font-bold text-primary">₦3,500,000</span>
               </div>
             </div>
             <div className="group">
@@ -117,36 +123,36 @@ export default function Showroom() {
                   alt="Bedside cabinet"
                 />
               </div>
-              <div className="flex justify-between items-center">
-                <h3 className="text-xl font-headline font-bold">Arc Bedside Cabinet</h3>
-                <span className="text-lg font-headline font-bold text-primary">$1,850</span>
+              <div className="flex justify-between items-start md:items-center">
+                <h3 className="text-lg md:text-xl font-headline font-bold">Arc Bedside Cabinet</h3>
+                <span className="text-base md:text-lg font-headline font-bold text-primary">₦1,850,000</span>
               </div>
             </div>
           </div>
 
           {/* Tonal Block Transition */}
-          <div className="col-span-12 py-24 px-12 bg-surface-container-low rounded-xl flex flex-col md:flex-row items-center justify-between gap-12 mt-12">
-            <div className="max-w-xl">
+          <div className="col-span-1 md:col-span-12 py-16 px-6 md:py-24 md:px-12 bg-surface-container-low rounded-xl flex flex-col md:flex-row items-center justify-between gap-10 md:gap-12 mt-12 md:mt-24">
+            <div className="max-w-xl text-center md:text-left">
               <span className="text-xs uppercase tracking-[0.3em] text-outline block mb-4">The Artisan's Promise</span>
-              <h2 className="text-4xl md:text-5xl font-headline font-bold text-primary leading-tight mb-6">
+              <h2 className="text-3xl md:text-5xl font-headline font-bold text-primary leading-tight mb-4 md:mb-6">
                 Built not for the season, but for the legacy.
               </h2>
-              <p className="text-on-surface-variant text-lg">
+              <p className="text-on-surface-variant text-base md:text-lg">
                 Every Royal Grain piece comes with a certificate of authenticity and a lifetime guarantee on structural joinery. We believe in furniture that ages as gracefully as the stories it holds.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4 w-full md:w-auto">
-              <div className="aspect-square w-32 md:w-40 rounded-full overflow-hidden bg-white flex items-center justify-center p-8 text-center shadow-sm">
-                <span className="text-xs font-bold leading-tight">HAND TURNED</span>
+            <div className="grid grid-cols-2 gap-4 w-full md:w-auto place-items-center">
+              <div className="aspect-square w-full max-w-[140px] md:w-40 rounded-full overflow-hidden bg-white flex items-center justify-center p-6 md:p-8 text-center shadow-sm">
+                <span className="text-[10px] md:text-xs font-bold leading-tight">HAND TURNED</span>
               </div>
-              <div className="aspect-square w-32 md:w-40 rounded-full overflow-hidden bg-primary text-on-primary flex items-center justify-center p-8 text-center shadow-sm">
-                <span className="text-xs font-bold leading-tight">SOLVENT FREE</span>
+              <div className="aspect-square w-full max-w-[140px] md:w-40 rounded-full overflow-hidden bg-primary text-on-primary flex items-center justify-center p-6 md:p-8 text-center shadow-sm">
+                <span className="text-[10px] md:text-xs font-bold leading-tight">SOLVENT FREE</span>
               </div>
             </div>
           </div>
 
           {/* Three Column Detailed Row */}
-          <div className="md:col-span-4 group mt-12">
+          <div className="md:col-span-4 group mt-16 md:mt-0">
             <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6">
               <img
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -157,7 +163,7 @@ export default function Showroom() {
             <div className="space-y-3">
               <div className="flex justify-between items-center">
                 <h3 className="text-2xl font-headline font-bold">The Sculpt Chair</h3>
-                <span className="text-xl font-headline font-bold text-primary">$1,100</span>
+                <span className="text-xl font-headline font-bold text-primary">₦1,200,000</span>
               </div>
               <p className="text-on-surface-variant line-clamp-2">
                 A masterclass in ergonomics and sculptural form. Crafted from a single piece of steam-bent ash wood.
@@ -168,7 +174,7 @@ export default function Showroom() {
               </button>
             </div>
           </div>
-          <div className="md:col-span-4 group mt-12">
+          <div className="md:col-span-4 group mt-16 md:mt-0">
             <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6">
               <img
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -179,7 +185,7 @@ export default function Showroom() {
             <div className="space-y-3">
               <div className="flex justify-between items-center">
                 <h3 className="text-2xl font-headline font-bold">Horizon Sideboard</h3>
-                <span className="text-xl font-headline font-bold text-primary">$6,400</span>
+                <span className="text-xl font-headline font-bold text-primary">₦7,500,000</span>
               </div>
               <p className="text-on-surface-variant line-clamp-2">
                 A long-form storage solution featuring hand-lathed handles and a floating stone top option.
@@ -190,7 +196,7 @@ export default function Showroom() {
               </button>
             </div>
           </div>
-          <div className="md:col-span-4 group mt-12">
+          <div className="md:col-span-4 group mt-16 md:mt-0">
             <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low mb-6">
               <img
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -201,7 +207,7 @@ export default function Showroom() {
             <div className="space-y-3">
               <div className="flex justify-between items-center">
                 <h3 className="text-2xl font-headline font-bold">Scribe Work Desk</h3>
-                <span className="text-xl font-headline font-bold text-primary">$4,250</span>
+                <span className="text-xl font-headline font-bold text-primary">₦4,800,000</span>
               </div>
               <p className="text-on-surface-variant line-clamp-2">
                 The ultimate professional anchor. Built-in cable management with zero aesthetic compromise.
@@ -216,10 +222,10 @@ export default function Showroom() {
       </section>
 
       {/* Signature Quote */}
-      <section className="py-32 px-8 bg-surface-container-lowest text-center">
+      <section className="py-20 md:py-32 px-6 md:px-8 bg-surface-container-lowest text-center">
         <div className="max-w-2xl mx-auto">
           <span className="material-symbols-outlined text-4xl text-tertiary-fixed-dim mb-8">format_quote</span>
-          <p className="text-4xl md:text-5xl font-headline italic text-primary leading-tight mb-12">
+          <p className="text-3xl md:text-5xl font-headline italic text-primary leading-loose md:leading-tight mb-10 md:mb-12">
             "Design is not for the eyes alone, but for the hands that touch and the life that happens around it."
           </p>
           <div className="flex flex-col items-center">
@@ -230,8 +236,8 @@ export default function Showroom() {
       </section>
 
       {/* Newsletter / CTA */}
-      <section className="px-8 max-w-screen-2xl mx-auto mb-32">
-        <div className="relative rounded-xl overflow-hidden bg-primary p-12 md:p-24 text-on-primary">
+      <section className="px-6 md:px-12 max-w-screen-2xl mx-auto mb-20 md:mb-32">
+        <div className="relative rounded-xl overflow-hidden bg-primary p-8 md:p-24 text-on-primary">
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
             <div className="w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white/40 to-transparent"></div>
           </div>

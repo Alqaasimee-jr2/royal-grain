@@ -1,4 +1,10 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Experience authentic Nigerian modern luxury with hand-turned Iroko and Mahogany furniture. Designed in Mokola, Ibadan.',
+};
 
 export default function Home() {
   return (
@@ -8,20 +14,20 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover brightness-[0.85]"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAedP9vpXQW5o3g25S4B2pYcDmlAY4CBZ0WxHafoGk94ylTAKEnhGge2eFd_iHzhxka8jy58-HkJR6jmYxYTtkAp4qqzpngE-qklUv5rY2fc7dI891XHCjo14bpEdujkIj2PH4XTV5Jz4jz4QMabLcP0OeGzPB-pZLEJkA70JWVUh8jgJ-6lv6oZJO9dJuXBDkyzIlMmcUCnQ4dvHcC2HBWlul6r6QtW3Ear0VfTNCGMboPD3Sbdn7ZG7UTR-SJ3OHcCcg-jqCW6u4"
+            src="/hero_living_space.png"
             alt="Luxurious high-ceiling living room"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-surface/40 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/40 z-10"></div>
         <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 max-w-5xl mx-auto pt-20">
-          <span className="font-label text-xs uppercase tracking-[0.4em] text-primary mb-6 opacity-80">
+          <span className="font-label text-xs uppercase tracking-[0.4em] text-white/80 mb-6 drop-shadow-md">
             Heritage in every fiber
           </span>
-          <h1 className="font-headline text-5xl md:text-8xl text-primary leading-tight mb-8 tracking-tighter">
+          <h1 className="font-headline text-5xl md:text-8xl text-white leading-tight mb-8 tracking-tighter drop-shadow-lg">
             Where Raw <br />
-            <span className="italic font-normal">Elegance</span> Meets Art
+            <span className="italic font-normal text-surface-container-low">Elegance</span> Meets Art
           </h1>
-          <p className="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mb-12 font-light leading-relaxed">
+          <p className="font-body text-lg md:text-xl text-white/90 max-w-2xl mb-12 font-light leading-relaxed drop-shadow-md">
             Crafting bespoke interiors that resonate with the soul of the material and the spirit of the space.
           </p>
           <div className="flex flex-col sm:flex-row gap-6">
@@ -46,8 +52,8 @@ export default function Home() {
             <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
               <img
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP4MCTMvyjdgVPom37_MTzhiyZQEWifkgbOWwcmNxOCD5JP9TNnMz7bnvEhcE5EueD_2jZLH0fIvsA00DwQrClgxaNvLrQPT-M0YIByYCdj3m6szO2CIq9zLoxGu4wLyY1NFKj-HPubJaWSGw_O7PVW04YCatuEBj1C3h5UIiA8yXhQRlWirh8efMflxsLPc7cQFR_pYppfWfhQcH5G_-c9PgIhKQg8mYSi6F-3ceWxz_2i2q59LQs5CXqBm7LipOHhWyiWqOjWd4"
-                alt="Master carpenter hands"
+                src="/artisan_workshop_hands.png"
+                alt="Master carpenter hands sanding a custom wood joint"
               />
             </div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-tertiary-container rounded-full flex items-center justify-center p-12 text-on-tertiary-container shadow-xl">

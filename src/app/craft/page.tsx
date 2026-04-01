@@ -1,13 +1,19 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Our Craft',
+  description: 'Learn about our deep West African roots, ethical timber sourcing, and the architectural precision of our Mokola-based artisans.',
+};
 
 export default function Craft() {
   return (
-    <main className="pt-24">
+    <main className="pt-24 md:pt-32">
       {/* Hero: The Soul of the Timber */}
-      <section className="relative h-[921px] overflow-hidden flex items-center px-8 md:px-20">
+      <section className="relative h-[600px] md:h-[921px] overflow-hidden flex items-center px-6 md:px-12 lg:px-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1ECpFdgKUmjPLqqgrpwr8DrXuG_-iobB6j16rr00RUseumJ0dVm6DyI3eMPF_j4IxkCAl38UIVqtnIfUI_S8CXGfcMUF9MtMesCFqDymG51J8qFHQGeLLnLq1PX_1NgXI_r6RwS9NYYyrZCjfOu5jMPOo_PNJ67BivHFm34vY2CnHkbXeUzXx4-OlF98D7JpmC32sdQ58W65zHk_ng4vursOXS42duqC-LjEfRDUP0NMZmJkYTcnoPruWWNhxsQR0EgSYJNsnxOw"
+            src="/craft_hero.png"
             alt="Premium raw walnut wood slabs"
             className="w-full h-full object-cover scale-105"
           />
@@ -27,8 +33,8 @@ export default function Craft() {
       </section>
 
       {/* Chapter 1: The Selection */}
-      <section className="py-32 px-8 md:px-20 bg-surface-container-low overflow-hidden">
-        <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-20 items-center">
+      <section className="py-16 md:py-32 px-6 md:px-12 lg:px-20 bg-surface-container-low overflow-hidden">
+        <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-center">
           <div className="w-full md:w-1/2 relative">
             {/* Asymmetric Image Layout */}
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
@@ -63,9 +69,9 @@ export default function Craft() {
       </section>
 
       {/* Chapter 2: The Studio */}
-      <section className="py-32 px-8 md:px-20 bg-surface">
-        <div className="max-w-screen-xl mx-auto text-center mb-24">
-          <h2 className="font-headline text-4xl md:text-5xl text-primary mb-6 italic">II. The Mokola Studio</h2>
+      <section className="py-16 md:py-32 px-6 md:px-12 lg:px-20 bg-surface">
+        <div className="max-w-screen-xl mx-auto text-center mb-16 md:mb-24">
+          <h2 className="font-headline text-3xl md:text-5xl text-primary mb-6 italic">II. The Mokola Studio</h2>
           <div className="w-24 h-1 bg-tertiary mx-auto mb-10"></div>
           <p className="text-on-surface-variant text-xl max-w-2xl mx-auto leading-relaxed">
             Located in the vibrant heart of Mokola, Ibadan, our drafting table is where organic inspiration meets architectural precision. Every joint is sketched by hand before the first cut is ever made.
@@ -92,10 +98,10 @@ export default function Craft() {
       </section>
 
       {/* Chapter 3: The Metamorphosis */}
-      <section className="py-32 px-8 md:px-20 bg-surface-container">
-        <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-          <div className="order-2 lg:order-1 space-y-10">
-            <h2 className="font-headline text-4xl md:text-5xl text-primary">III. The Ibadan Craft</h2>
+      <section className="py-16 md:py-32 px-6 md:px-12 lg:px-20 bg-surface-container">
+        <div className="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center">
+          <div className="order-2 lg:order-1 space-y-8 md:space-y-10">
+            <h2 className="font-headline text-3xl md:text-5xl text-primary">III. The Ibadan Craft</h2>
             <div className="space-y-6">
               <div className="group flex gap-8 items-start p-6 rounded-xl transition-all hover:bg-surface-container-high">
                 <div className="text-tertiary font-headline text-3xl italic">01.</div>
@@ -135,14 +141,14 @@ export default function Craft() {
               />
             </div>
             {/* Decorative element */}
-            <div className="absolute -top-12 -left-12 w-48 h-48 border border-primary/20 rounded-full animate-pulse opacity-50"></div>
+            <div className="absolute top-0 -left-6 md:-top-12 md:-left-12 w-24 h-24 md:w-48 md:h-48 border border-primary/20 rounded-full animate-pulse opacity-50"></div>
           </div>
         </div>
       </section>
 
       {/* Gallery Grid */}
-      <section className="pb-32 px-8 md:px-20 bg-surface">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-2xl mx-auto pt-20">
+      <section className="pb-16 md:pb-32 px-6 md:px-12 lg:px-20 bg-surface">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-2xl mx-auto pt-12 md:pt-20">
           <div className="rounded-xl overflow-hidden aspect-[3/4]">
             <img
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxTS-gg4W7Fyd1yjq2qRKGm3g7O6tN5wpLD_5LSaHKbHrzuIjcMr7Ki5yyAIJOe-FE4e23WDL9hoEwiAM2A2qC5bgH-sw7fWhBy-FbVSsRKSnlBt6F9RDUhK2gt17w_xYinzCGktRE0xn_zUWj90aV4d098CS1Ed4YM8X0Vk23geMP7hZ0Rtbk5G6kxFeAMHunmqOMtqwhGjNalgW7xV_btSoewxmNCnOJn1NquvpVyD0AOPpcxowJ4Xq9tir968BACJ_5z7xzawU"
@@ -175,9 +181,9 @@ export default function Craft() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-primary text-on-primary">
-        <div className="max-w-screen-xl mx-auto px-8 flex flex-col items-center text-center">
-          <h2 className="font-headline text-4xl md:text-5xl mb-8">Visit our Mokola Workshop</h2>
+      <section className="py-16 md:py-24 bg-primary text-on-primary">
+        <div className="max-w-screen-xl mx-auto px-6 md:px-8 flex flex-col items-center text-center">
+          <h2 className="font-headline text-3xl md:text-5xl mb-6 md:mb-8">Visit our Mokola Workshop</h2>
           <p className="text-on-primary-container text-lg max-w-xl mb-12 opacity-90">
             Collaborate with our designers in our Ibadan studio to create a piece that reflects your story and our heritage.
           </p>

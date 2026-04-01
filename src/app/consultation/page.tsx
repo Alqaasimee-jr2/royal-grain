@@ -1,23 +1,30 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
+import ClientBookingForm from './ClientBookingForm';
+
+export const metadata: Metadata = {
+  title: 'Consultation',
+  description: 'Book a bespoke luxury interior design consultation with our master designers in Mokola, Ibadan.',
+};
 
 export default function Consultation() {
   return (
     <main className="pt-24 bg-background">
       {/* Hero Section */}
-      <section className="relative w-full h-[716px] flex items-center overflow-hidden">
+      <section className="relative w-full h-[500px] md:h-[716px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover brightness-90"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5Mg25SOHxsYPjOD5qZKparhZI_VkdtyrXTCeCy8DDdTABu8M7dqDxedkOZgAQS-5j_F5Hr3WTseT6K1TLiQxj1W4DN5h8nE-Jh32nZvs6UOBDJv0wBf8_hAjUIcLJn6_6n614a8taWQwrPUNCx91Pl464Zc6ESEO2UcfcK0UF0HsQS6saAr4nGk7y-oCDV_VBPKIFGrldDkhPEbcqNBSt70iveIBM7ettQW5LtF3enC8j1vmLRp4Y5nuun2fhBLXRz8FJyILkcVs"
-            alt="Interior office"
+            src="/consultation_hero.png"
+            alt="Interior design consultation office"
           />
         </div>
-        <div className="relative z-10 w-full max-w-screen-2xl mx-auto px-8">
-          <div className="max-w-2xl bg-surface/80 glass-effect p-12 rounded-xl border border-outline-variant/20">
+        <div className="relative z-10 w-full max-w-screen-2xl mx-auto px-6 md:px-12">
+          <div className="max-w-2xl bg-surface/80 glass-effect p-8 md:p-12 rounded-xl border border-outline-variant/20">
             <span className="font-label text-primary-container tracking-[0.2em] uppercase text-xs mb-4 block">
               The Bespoke Experience
             </span>
-            <h1 className="text-5xl md:text-6xl font-headline text-primary mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-headline text-primary mb-6 leading-tight">
               Your Vision, <br />
               <span className="italic font-normal">Our Masterpiece</span>
             </h1>
@@ -29,147 +36,15 @@ export default function Consultation() {
       </section>
 
       {/* Main Content Grid */}
-      <section className="max-w-screen-2xl mx-auto px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
+      <section className="max-w-screen-2xl mx-auto px-6 md:px-12 py-12 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-20">
           {/* Left: Booking Form */}
-          <div className="lg:col-span-7 space-y-16">
-            <div>
-              <h2 className="text-3xl font-headline text-primary mb-2">Reserve Your Session</h2>
-              <p className="text-on-surface-variant font-body">
-                Select your preferences below to begin your design journey.
-              </p>
-            </div>
-            <form className="space-y-10">
-              {/* Project Type Chips */}
-              <div>
-                <label className="block font-label text-sm text-primary mb-6 uppercase tracking-wider">Project Type</label>
-                <div className="flex flex-wrap gap-4">
-                  <button className="px-6 py-3 rounded-full bg-primary text-on-primary font-body text-sm flex items-center gap-3 transition-all" type="button">
-                    <span className="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
-                    Full Home
-                  </button>
-                  <button className="px-6 py-3 rounded-full bg-surface-container text-on-surface-variant font-body text-sm flex items-center gap-3 border border-outline-variant/20 hover:bg-surface-container-high transition-all" type="button">
-                    <span className="w-2 h-2 rounded-full bg-outline-variant"></span>
-                    Single Room
-                  </button>
-                  <button className="px-6 py-3 rounded-full bg-surface-container text-on-surface-variant font-body text-sm flex items-center gap-3 border border-outline-variant/20 hover:bg-surface-container-high transition-all" type="button">
-                    <span className="w-2 h-2 rounded-full bg-outline-variant"></span>
-                    Custom Furniture
-                  </button>
-                  <button className="px-6 py-3 rounded-full bg-surface-container text-on-surface-variant font-body text-sm flex items-center gap-3 border border-outline-variant/20 hover:bg-surface-container-high transition-all" type="button">
-                    <span className="w-2 h-2 rounded-full bg-outline-variant"></span>
-                    Commercial Space
-                  </button>
-                </div>
-              </div>
-
-              {/* Form Inputs */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="relative">
-                  <input
-                    className="peer w-full bg-transparent border-b border-outline-variant py-4 focus:outline-none focus:border-primary transition-colors placeholder-transparent"
-                    id="name"
-                    placeholder=" "
-                    type="text"
-                  />
-                  <label className="absolute left-0 top-4 text-on-surface-variant transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-tertiary peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs" htmlFor="name">
-                    Full Name
-                  </label>
-                </div>
-                <div className="relative">
-                  <input
-                    className="peer w-full bg-transparent border-b border-outline-variant py-4 focus:outline-none focus:border-primary transition-colors placeholder-transparent"
-                    id="email"
-                    placeholder=" "
-                    type="email"
-                  />
-                  <label className="absolute left-0 top-4 text-on-surface-variant transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-tertiary peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs" htmlFor="email">
-                    Email Address
-                  </label>
-                </div>
-                <div className="relative">
-                  <input
-                    className="peer w-full bg-transparent border-b border-outline-variant py-4 focus:outline-none focus:border-primary transition-colors placeholder-transparent"
-                    id="phone"
-                    placeholder=" "
-                    type="tel"
-                  />
-                  <label className="absolute left-0 top-4 text-on-surface-variant transition-all peer-focus:-top-4 peer-focus:text-xs peer-focus:text-tertiary peer-[:not(:placeholder-shown)]:-top-4 peer-[:not(:placeholder-shown)]:text-xs" htmlFor="phone">
-                    Phone Number
-                  </label>
-                </div>
-                <div className="relative">
-                  <select className="peer w-full bg-transparent border-b border-outline-variant py-4 focus:outline-none focus:border-primary transition-colors appearance-none" id="location" defaultValue="">
-                    <option disabled value="">Showroom Location</option>
-                    <option value="ibadan">Mokola, Ibadan</option>
-                    <option value="lagos">Lekki, Lagos</option>
-                    <option value="abuja">Maitama, Abuja</option>
-                  </select>
-                  <span className="material-symbols-outlined absolute right-0 top-4 text-outline pointer-events-none">expand_more</span>
-                </div>
-              </div>
-
-              {/* Premium Date/Time Picker */}
-              <div className="space-y-6">
-                <label className="block font-label text-sm text-primary uppercase tracking-wider">Preferred Consultation Date</label>
-                <div className="grid grid-cols-4 md:grid-cols-7 gap-3">
-                  {/* Calendar Mockup */}
-                  <div className="p-3 text-center rounded-xl bg-surface-container-low text-on-surface-variant opacity-40 cursor-not-allowed">
-                    <span className="block text-[10px] uppercase">Mon</span>
-                    <span className="text-sm font-semibold">12</span>
-                  </div>
-                  <div className="p-3 text-center rounded-xl bg-surface-container-low text-on-surface-variant opacity-40 cursor-not-allowed">
-                    <span className="block text-[10px] uppercase">Tue</span>
-                    <span className="text-sm font-semibold">13</span>
-                  </div>
-                  <div className="p-3 text-center rounded-xl bg-surface-container border border-outline-variant cursor-pointer hover:border-primary">
-                    <span className="block text-[10px] uppercase">Wed</span>
-                    <span className="text-sm font-semibold">14</span>
-                  </div>
-                  <div className="p-3 text-center rounded-xl bg-primary text-on-primary cursor-pointer shadow-lg shadow-primary/20">
-                    <span className="block text-[10px] uppercase">Thu</span>
-                    <span className="text-sm font-semibold">15</span>
-                  </div>
-                  <div className="p-3 text-center rounded-xl bg-surface-container border border-outline-variant cursor-pointer hover:border-primary">
-                    <span className="block text-[10px] uppercase">Fri</span>
-                    <span className="text-sm font-semibold">16</span>
-                  </div>
-                  <div className="p-3 text-center rounded-xl bg-surface-container border border-outline-variant cursor-pointer hover:border-primary">
-                    <span className="block text-[10px] uppercase">Sat</span>
-                    <span className="text-sm font-semibold">17</span>
-                  </div>
-                  <div className="p-3 text-center rounded-xl bg-surface-container border border-outline-variant cursor-pointer hover:border-primary">
-                    <span className="block text-[10px] uppercase">Sun</span>
-                    <span className="text-sm font-semibold">18</span>
-                  </div>
-                </div>
-
-                <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-hide">
-                  <button className="whitespace-nowrap px-6 py-2 border border-outline-variant rounded-full text-xs font-body hover:bg-primary hover:text-on-primary transition-all" type="button">09:00 AM</button>
-                  <button className="whitespace-nowrap px-6 py-2 border border-outline-variant rounded-full text-xs font-body hover:bg-primary hover:text-on-primary transition-all" type="button">11:30 AM</button>
-                  <button className="whitespace-nowrap px-6 py-2 bg-primary-container text-on-primary-container rounded-full text-xs font-body" type="button">02:00 PM</button>
-                  <button className="whitespace-nowrap px-6 py-2 border border-outline-variant rounded-full text-xs font-body hover:bg-primary hover:text-on-primary transition-all" type="button">04:30 PM</button>
-                </div>
-              </div>
-
-              <div>
-                <textarea
-                  className="w-full bg-surface-container-low border-none rounded-xl p-6 focus:ring-1 focus:ring-primary font-body text-on-surface-variant"
-                  placeholder="Tell us about your project vision..."
-                  rows={4}
-                ></textarea>
-              </div>
-
-              <button className="w-full py-5 bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-xl font-headline text-lg tracking-wide hover:opacity-95 transition-all shadow-xl shadow-primary/10" type="submit">
-                Confirm Consultation Request
-              </button>
-            </form>
-          </div>
+          <ClientBookingForm />
 
           {/* Right: Information & Testimonials */}
           <div className="lg:col-span-5 space-y-12">
             {/* What to Expect */}
-            <div className="bg-surface-container-low p-10 rounded-xl space-y-8">
+            <div className="bg-surface-container-low p-6 md:p-10 rounded-xl space-y-8">
               <h3 className="text-2xl font-headline text-primary">The Consultation Journey</h3>
               <div className="space-y-6">
                 <div className="flex gap-6">
@@ -252,20 +127,20 @@ export default function Consultation() {
       </section>
 
       {/* Final Call to Action */}
-      <section className="py-24 bg-surface-container-low mt-20">
-        <div className="max-w-4xl mx-auto text-center px-8">
-          <h2 className="text-4xl font-headline text-primary mb-6">Can't Find a Suitable Time?</h2>
+      <section className="py-16 md:py-24 bg-surface-container-low mt-16 md:mt-20">
+        <div className="max-w-4xl mx-auto text-center px-6 md:px-12">
+          <h2 className="text-3xl md:text-4xl font-headline text-primary mb-6">Can't Find a Suitable Time?</h2>
           <p className="text-on-surface-variant text-lg mb-10 font-body">
             Our concierge team is available to assist with custom scheduling or urgent project requests. Let us tailor the experience to your timeline.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <button className="px-10 py-4 border border-primary text-primary rounded-xl font-headline hover:bg-primary hover:text-on-primary transition-all">
-              Call Our Concierge (+234 800 ROYAL)
-            </button>
-            <button className="px-10 py-4 text-primary font-headline flex items-center justify-center gap-2 group">
-              Live Chat with a Designer
+            <a href="tel:+2349019597944" className="px-10 py-4 border border-primary text-primary rounded-xl font-headline hover:bg-primary hover:text-on-primary transition-all inline-block">
+              Call Our Concierge (+234 901 959 7944)
+            </a>
+            <a href="https://wa.me/2349019597944" target="_blank" rel="noopener noreferrer" className="px-10 py-4 text-primary font-headline flex items-center justify-center gap-2 group">
+              WhatsApp Our Designers
               <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
