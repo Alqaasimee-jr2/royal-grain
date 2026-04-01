@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Royal Grain Interior & Furniture
 
-## Getting Started
+Welcome to the digital atelier of **Royal Grain Interior & Furniture**. We are makers of heritage-driven, artisanal furniture based in the heart of Ibadan, Nigeria.
 
-First, run the development server:
+### 🏛️ The Brand: Heritage in Every Fiber
+Royal Grain bridges the gap between traditional West African craftsmanship and contemporary luxury design. Every piece is hand-turned by master artisans who respect the organic imperfections of the material—creating timeless heirlooms from African Mahogany, Iroko Teak, and Zuma Granite.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ✨ Key Features
+- **Artisanal Philosophy**: A focus on the "Mokola Studio" experience, where local hardwoods meet architectural precision.
+- **Curated Narratives**: A responsive Bento-grid gallery showcasing private sanctuaries crafted for discerning clients.
+- **Material Interactive UI**: Highlights the soul of our timber—from ethical sourcing to hand-finish oiling.
+- **Direct Consultation**: Streamlined WhatsApp-integrated lead capture for private viewings and bespoke commissions.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🛠️ Tech Stack
+- **Framework**: Next.js 14+ (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS (Custom Material-3 Design Tokens)
+- **Icons**: Google Material Symbols
+- **Typography**: Geist Mono & Sans
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+#### Prerequisites
+- Node.js 18.x or later
+- npm or yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/royal-grain.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📂 Project Structure
+- `/src/app`: Next.js App Router for all pages (Home, Craft, Consultation).
+- `/src/components`: High-fidelity UI components (Navbar, Bento Grid, Floating Status).
+- `/public`: Optimized assets and localized heritage imagery.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🎨 Design Credits
+Designed and engineered by **Antigravity** with a focus on "Raw Elegance."
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Where Raw Elegance Meets Art.*
